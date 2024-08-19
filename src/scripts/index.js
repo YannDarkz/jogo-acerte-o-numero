@@ -23,7 +23,6 @@ frm.addEventListener('submit', (e) => {
                 title.innerText = "Acerte o Número"
 
             },2000)
-            alert(`Você já apostou o número ${numero}. tente outro...`)
         } else {
             erros.push(numero)
             const numErros = erros.length
