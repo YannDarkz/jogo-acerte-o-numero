@@ -1,0 +1,45 @@
+
+body {
+    font-family: 'Franklin Gothic Medium', sans-serif;
+    background-color: chocolate;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(104, 58, 146);
+}
+
+p {
+    color: rgb(122, 14, 14);
+}
+
+#outErros {
+    color: rgb(177, 28, 28);
+}
+
+#outChances {
+    color: rgb(16, 73, 16)
+}
+
+#outDica {
+    color: yellow
+}
+
+
+h6 {
+    text-align: center;
+    margin-top: 20vh;
+}
+
+.dev {
+    color: gold;
+}
+
+
+.none {
+    display: none;
+}
+
+.exibe {
+    display: inline-block;
+}
