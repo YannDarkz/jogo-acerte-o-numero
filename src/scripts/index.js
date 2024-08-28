@@ -3,8 +3,22 @@ const respErros = document.querySelector("#outErros")
 const respChances = document.querySelector("#outChances")
 const respDica = document.querySelector("#outDica")
 
+class Sorteado {
+    constructor() {
+    }
+     #sorteio() {
+        const sorteio = Math.floor(Math.random() * 100) + 1
+        return sorteio
+    }
+
+    getSorteio() {
+        return this.#sorteio()
+    }
+}
+
 const erros = []
-const sorteado = Math.floor(Math.random() * 100) + 1
+const sorteioObj = new Sorteado()  
+const sorteado = sorteioObj.getSorteio() 
 const chances = 6
 
 frm.addEventListener('submit', (e) => {
@@ -17,11 +31,9 @@ frm.addEventListener('submit', (e) => {
     } else {
         if (erros.includes(numero)) {
             const title = document.getElementById('titulo')
-
             title.innerText = `Você já apostou o número ${numero}. tente outro...`
             setTimeout(() => {
                 title.innerText = "Acerte o Número"
-
             },2000)
         } else {
             erros.push(numero)
